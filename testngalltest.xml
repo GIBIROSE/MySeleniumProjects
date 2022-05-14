@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="tests">
+	<listeners>
+		<listener class-name="com.payroll.utilities.ListenerClass"></listener>
+	</listeners>
+
+
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="edge"></parameter>
+
+
+		<classes>
+
+
+			<class name="com.payroll.testcases.WorkersTest"></class>
+			<class name="com.payroll.testcases.WorkersTest"></class>
+			<class name="com.payroll.testcases.LoginTest"></class>
+			<class name="com.payroll.testcases.ClientTest"></class>
+			<class name="com.payroll.testcases.LogoutTest"></class>
+			<class name="com.payroll.testcases.HomePageTest"></class>
+			<class name="com.payroll.testcases.CompanyTest"></class>
+			<class name="com.payroll.testcases.ReportTest"></class>
+			<class name="com.payroll.testcases.TimesheetTest"></class>
+			<class name="com.payroll.testcases.PayslipTest"></class>
+			<class name="com.payroll.testcases.DeductionTest"></class>
+
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
